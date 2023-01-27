@@ -18,17 +18,21 @@
 #include "NexConfig.h"
 #include "NexTouch.h"
 
+extern bool wake_up;
+
 /**
  * @addtogroup CoreAPI 
  * @{ 
  */
 
+
 /**
- * Init Nextion.  
+ * Init Nextion with boudrate.  
  * 
  * @return true if success, false for failure. 
  */
-bool nexInit(void);
+
+bool nexInit(uint32_t boud_rate=9600);
 
 /**
  * Listen touch event and calling callbacks attached before.
