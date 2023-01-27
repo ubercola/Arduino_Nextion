@@ -49,6 +49,13 @@ public: /* methods */
      */
     void printObjInfo(void);
 
+    /*
+     * Get component name.
+     *
+     * @return the name of component. 
+     */
+    const char *getObjName(void);        
+
 protected: /* methods */
 
     /*
@@ -65,12 +72,6 @@ protected: /* methods */
      */
     uint8_t getObjCid(void);
 
-    /*
-     * Get component name.
-     *
-     * @return the name of component. 
-     */
-    const char *getObjName(void);    
     
 private: /* data */ 
     uint8_t __pid; /* Page ID */
