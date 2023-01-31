@@ -73,6 +73,22 @@ public: /* methods */
      * @return true if success, false for failure. 
      */
     bool setText(const char *buffer);
+
+    /**
+     * Get bco attribute of component
+     *
+     * @param number - buffer storing data return
+     * @return the length of the data 
+     */
+    uint32_t Get_background_color_bco(uint32_t *number);
+	
+    /**
+     * Set bco attribute of component
+     *
+     * @param number - To set up the data
+     * @return true if success, false for failure
+     */
+    bool Set_background_color_bco(uint32_t number);    
 	
     /**
      * Get bco0 attribute of component
