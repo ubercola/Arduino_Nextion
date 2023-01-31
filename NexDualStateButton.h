@@ -248,7 +248,24 @@ public: /* methods */
      * @param number - To set up the data
      * @return true if success, false for failure
      */
-    bool Set_state1_image_pic1(uint32_t number);			
+    bool Set_state1_image_pic1(uint32_t number);	
+
+    /**
+     * Get bco2 attribute of component
+     *
+     * @param number - buffer storing data return
+     * @return the length of the data 
+     */
+    uint32_t Get_press_background_color_bco2(uint32_t *number);	
+
+    /**
+     * Set bco2 attribute of component
+     *
+     * @param number - To set up the data
+     * @return true if success, false for failure
+     */
+    bool Set_press_background_color_bco2(uint32_t number);	
+        		
 };
 /**
  * @}
